@@ -25,13 +25,9 @@ if (isset($_POST['login'])) {
         $user = get_user_by_username($username);
 
         if ($user && password_verify($password, $user['password'])) {
-            if ($user['status'] === 'approved') {
-                $_SESSION['user_login'] = $username;
-                $_SESSION['user_role'] = $user['role'];
-                redirect_to_dashboard();
-            } else {
-                $status_error = "Your account is pending approval.";
-            }
+            $_SESSION['user_login'] = $username;
+            $_SESSION['user_role'] = $user['role'];
+            redirect_to_dashboard();
         } else {
             $worngpass = "Invalid username or password!";
         }
