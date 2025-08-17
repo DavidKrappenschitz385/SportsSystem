@@ -25,7 +25,7 @@ $user = get_user_by_username($_SESSION['user_login']);
                 <a href="dashboard.php?page=create-player" class="list-group-item list-group-item-action"><i class="fas fa-user-plus"></i> Create Player</a>
                 <a href="dashboard.php?page=view-coaches" class="list-group-item list-group-item-action"><i class="fas fa-chalkboard-teacher"></i> View Coaches</a>
                 <a href="../profile.php" class="list-group-item list-group-item-action"><i class="fas fa-user"></i> My Profile</a>
-                <a href="../logout.php" class="list-group-item list-group-item-action"><i class="fas fa-power-off"></i> Logout</a>
+                <a href="../admin/logout.php" class="list-group-item list-group-item-action"><i class="fas fa-power-off"></i> Logout</a>
             </div>
         </div>
         <div class="col-md-9">
